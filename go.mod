@@ -1,3 +1,3 @@
-module github.com/RestartFU/MCBE
+module github.com/RestartFU/mcbe
 
 go 1.17
