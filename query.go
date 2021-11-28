@@ -14,7 +14,7 @@ func Query(address string) (map[string]string, error) {
 	if err != nil {
 		return nil, err
 	}
-	if err := conn.SetDeadline(time.Now().Add(time.Second * 5)); err != nil {
+	if err := conn.SetDeadline(time.Now().Add(10 * time.Second)); err != nil {
 		return nil, err
 	}
 	defer conn.Close()
